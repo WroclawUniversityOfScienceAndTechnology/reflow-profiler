@@ -111,7 +111,7 @@ class TemperaturePlotApp:
             plt.axes([0.86, 0.60, 0.08, 0.04]),
         ]
 
-        for y_pos, label in [(0.85, "Prog Temp 1 (C):"), (0.75, "Prog Temp 2 (C):"), (0.65, "Prog Temp 3 (C):")]:
+        for y_pos, label in [(0.85, "Prog PEAK (C):"), (0.75, "Prog SOAK (C):"), (0.65, "Prog PRE-HEAT (C):")]:
             self.figure.text(0.86, y_pos, label, fontweight="bold", fontsize=9)
 
         self.threshold_boxes = [ResizeSafeTextBox(axis, "") for axis in box_axes]
